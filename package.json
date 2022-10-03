@@ -1,0 +1,24 @@
+{
+  "name": "registroautomotor",
+  "version": "1.0.0",
+  "description": "TPO N1",
+  "main": "index.js",
+  "scripts": {
+    "convertir": "tsc registro.ts",
+    "ejecutar": "node registro.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarianoCarbajo/RegistroAutomotor.git"
+  },
+  "author": "Mariano Carbajo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarianoCarbajo/RegistroAutomotor/issues"
+  },
+  "homepage": "https://github.com/MarianoCarbajo/RegistroAutomotor#readme",
+  "dependencies": {
+    "@types/node": "^18.8.0",
+    "readline-sync": "^1.4.10"
+  }
+}
