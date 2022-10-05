@@ -50,7 +50,9 @@ class RegistroAutomotor {
     }
 
     public mostrarAutos(): void {
-      console.log(this.listaAutos)
+        console.log(this.nombre);
+        console.log(this.direccion);
+        console.log(this.listaAutos);
     }
 
 }
@@ -124,6 +126,7 @@ let listaAutos : Array<Auto> = [];
 for (let i : number= 0; i < datos.getArregloString().length; i++){
     crearAuto(datos.getArregloString()[i], listaAutos);
 }
+let registro: RegistroAutomotor = new RegistroAutomotor("RNPA Nº1","San Martin 352",listaAutos)
 
 // Creo el menu
 let opcion: number=0;
@@ -142,7 +145,7 @@ while (opcion !== 5) {
   switch (opcion) {
     case 1:
       console.log("Elegiste opción 1");
-      console.log(listaAutos);
+      registro.mostrarAutos();
       break;
     case 2:
       console.log("Elegiste opción 2");

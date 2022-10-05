@@ -35,6 +35,8 @@ var RegistroAutomotor = /** @class */ (function () {
         return this.listaAutos;
     };
     RegistroAutomotor.prototype.mostrarAutos = function () {
+        console.log(this.nombre);
+        console.log(this.direccion);
         console.log(this.listaAutos);
     };
     return RegistroAutomotor;
@@ -94,6 +96,7 @@ var listaAutos = [];
 for (var i = 0; i < datos.getArregloString().length; i++) {
     crearAuto(datos.getArregloString()[i], listaAutos);
 }
+var registro = new RegistroAutomotor("RNPA Nº1", "San Martin 352", listaAutos);
 // Creo el menu
 var opcion = 0;
 while (opcion !== 5) {
@@ -109,7 +112,8 @@ while (opcion !== 5) {
     switch (opcion) {
         case 1:
             console.log("Elegiste opción 1");
-            console.log(listaAutos);
+            //console.log(listaAutos);
+            registro.mostrarAutos();
             break;
         case 2:
             console.log("Elegiste opción 2");
